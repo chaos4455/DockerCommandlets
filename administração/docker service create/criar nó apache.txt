@@ -1,0 +1,1 @@
+docker service create --name httpdcluster--hostname httpdnode--replicas 3 --publish 8088:80 httpd
