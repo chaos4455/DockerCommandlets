@@ -1,0 +1,16 @@
+ufw allow 6443/tcp
+ufw allow 2379/tcp
+ufw allow 2380/tcp
+ufw allow 10250/tcp
+ufw allow 10251/tcp
+ufw allow 10252/tcp
+
+worker
+ufw allow 10250/tcp
+ufw allow 30000/tcp
+ufw allow 32767/tcp
+
+ufw enable
+ufw reload
+
+service ufw restart

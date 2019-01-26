@@ -1,0 +1,1 @@
+docker service create --name rundeck --hostname rundeck --replicas 1 -e EXTERNAL_SERVER_URL=http://192.168.42.243:4440 --publish 4440:4440 jordan/rundeck

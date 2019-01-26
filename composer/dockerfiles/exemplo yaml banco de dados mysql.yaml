@@ -1,0 +1,14 @@
+version: '3'
+services:
+  redis:
+    image: mysql:latest
+    deploy:
+    ports:
+    - "3306:3306"
+  volumes:
+    - ./var/mysql:/var/lib/mysql
+  environment:
+    - MYSQL_DATABASE=db
+    - MYSQL_USER=dbuser
+    - MYSQL_PASSWORD=mysql123
+    - MYSQL_ROOT_PASSWORD=mysql123

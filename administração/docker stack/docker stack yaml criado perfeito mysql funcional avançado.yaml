@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+#Ambiente de produção MYSQL>>>>
+
+  mysqlstack:
+        volumes:
+         - ./var/mysql:/var/lib/mysql
+        environment:
+         - MYSQL_DATABASE=db
+         - MYSQL_USER=dbuser
+         - MYSQL_PASSWORD=mysql123
+         - MYSQL_ROOT_PASSWORD=mysql123
+        image: mysql
+        hostname: apachestacknode
+        ports:
+         - 3306:3306
+        deploy:
+         mode: replicated
+         replicas: 2
+         resources:
+           limits:
+             cpus: '0.50'
+             memory: 50M
+           reservations:
+             cpus: '0.25'
+             memory: 20M
+         update_config:
+           parallelism: 1
+           delay: 20s
+         restart_policy:
+           condition: on-failure
+           max_attempts: 3
+           window: 120s

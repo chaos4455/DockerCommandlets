@@ -1,0 +1,1 @@
+docker service create --name nginxcluster --hostname nginxclusternode --replicas 3 --publish 80:80 nginx

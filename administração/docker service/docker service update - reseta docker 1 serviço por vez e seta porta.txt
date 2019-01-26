@@ -1,0 +1,1 @@
+docker service update dockerstack_redis --init --update-delay 10s --rollback-parallelism 1 --rollback-monitor 30s --rollback-delay 1m --hostname servercluster --publish-add 8888:80

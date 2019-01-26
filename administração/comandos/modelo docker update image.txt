@@ -1,0 +1,1 @@
+docker service update --image nginxhtop nginxcluster

@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+ mysql:
+  image: mysql
+  mac_address: 02:42:ac:11:65:43
+  ports:
+    - 3306:3306
+  tty: true
+  user: usuario

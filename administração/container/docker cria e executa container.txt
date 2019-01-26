@@ -1,0 +1,2 @@
+docker create -t -i fedora bash
+docker start -a -i 6d8af538ec5

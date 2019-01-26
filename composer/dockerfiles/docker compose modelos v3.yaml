@@ -1,0 +1,97 @@
+Instructions on using docker-compose files
+# docker-compsoe version to be used must be mentioned at the top
+version: '3'
+services:
+  web:
+    build: .
+    ports:
+     - "5000:5000"
+  redis:
+    image: "redis:alpine"
+    
+# Each container runs as a different service
+You can mention the dockerfile name in the build. Mostly build "." works always.
+
+version: '2'
+services:
+  webapp:
+    build:
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+      args:
+        buildno: 1
+        
+version: '2'
+services:
+  webapp:
+    build: .
+If you specify image as well as build, then Compose names the built image with the webapp and optional tag specified in image
+
+build: ./dir
+image: webapp:tag
+In this general example, the redis service is constrained to use no more than 50M of memory and 0.50 (50%) of available processing time (CPU), and has 20M of memory and 0.25 CPU time reserved (as always available to it).
+
+version: '3'
+services:
+  redis:
+    image: redis:alpine
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M
+Environments
+Environment variables can be defined in multiple ways
+
+environment:
+  RACK_ENV: development
+  SHOW: 'true'
+  SESSION_SECRET:
+
+environment:
+  - RACK_ENV=development
+  - SHOW=true
+  - SESSION_SECRET
+expose
+Expose ports without publishing them to the host machine - they’ll only be accessible to linked services. Only the internal port can be specified.
+
+expose:
+ - "3000"
+ - "8000"
+external_links
+Link to containers started outside this docker-compose.yml or even outside of Compose, especially for containers that provide shared or common services. external_links follow semantics similar to links when specifying both the container name and the link alias (CONTAINER:ALIAS).
+
+external_links:
+ - redis_1
+ - project_db_1:mysql
+ - project_db_1:postgresql
+restart
+no is the default restart policy, and it will not restart a container under any circumstance. When always is specified, the container always restarts. The on-failure policy restarts a container if the exit code indicates an on-failure error.
+
+  - restart: no
+  - restart: always
+  - restart: on-failure
+volumes
+volumes:
+  # Just specify a path and let the Engine create a volume
+  - /var/lib/mysql
+
+  # Specify an absolute path mapping
+  - /opt/data:/var/lib/mysql
+
+  # Path on the host, relative to the Compose file
+  - ./cache:/tmp/cache
+
+  # User-relative path
+  - ~/configs:/etc/configs/:ro
+
+  # Named volume
+  - datavolume:/var/lib/mysql
+volumes_from:
+ - service_name
+ - service_name:ro
+ - container:container_name
+ - container:container_name:rw

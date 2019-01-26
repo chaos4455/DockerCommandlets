@@ -1,0 +1,55 @@
+version: '3'
+services:
+db:
+  image: mysql:latest
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./var/mysql:/var/lib/mysql
+  environment:
+    - MYSQL_DATABASE=db
+    - MYSQL_USER=admin
+    - MYSQL_PASSWORD=Rio@2015
+    - MYSQL_ROOT_PASSWORD=Rio@2015
+
+web:
+  # image: eboraas/apache-php
+  image: tutum/apache-php
+  ports:
+    - "80:80"
+    - "443:443"
+  links:
+    - db
+  volumes:
+    - ./www:/app
+
+exemplo yaml com erro
+
+version: '3'
+services:
+  redis:
+    build:
+      context: ./dir
+      dockerfile: Dockerfile-alternate
+  ports:
+    - "3306:3306"
+  volumes:
+    - ./var/mysql:/var/lib/mysql
+  environment:
+    - MYSQL_DATABASE=db
+    - MYSQL_USER=dbuser
+    - MYSQL_PASSWORD=mysql123
+    - MYSQL_ROOT_PASSWORD=mysql123
+deploy:
+      replicas: 10
+parallelism: 2
+        delay: 10s
+restart_policy:
+        condition: on-failure
+
+image: mysql:latest
+build:
+  context: .
+  shm_size: '100mb'
+cap_add:
+  - ALL

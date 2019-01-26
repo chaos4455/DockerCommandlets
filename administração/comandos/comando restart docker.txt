@@ -1,0 +1,5 @@
+systemctl restart docker
+
+ou
+
+service docker restart

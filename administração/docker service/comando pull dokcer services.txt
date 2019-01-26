@@ -1,0 +1,1 @@
+docker service create --name dockercluster --hostname dockerclusternode --replicas 2 --expose 00:60000 docker

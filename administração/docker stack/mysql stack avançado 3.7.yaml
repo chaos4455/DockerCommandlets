@@ -1,0 +1,54 @@
+version: "3.7"
+services:
+  mysql:
+    build:
+      container_name: mysql
+    Deploy:
+      mode: replicated
+      replicas: 10
+      rollback_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 60s
+        max_failure_ratio: 0.3
+        order: start-first
+      update_config:
+        parallelism: 3
+        delay: 10s
+        failure_action: continue
+        monitor: 60s
+        max_failure_ratio: 0.3
+        order: start-first
+      resources:
+        limits:
+          cpus: 0.50
+          memory: 50M
+        reservations:
+          cpus: 0.50
+          memory: 50M
+      restart-policy:
+         condition: on-failure
+         delay: 25s
+         max_attempts: 3
+         window: 120s
+
+      hostname: meumysql
+
+      image: mysql
+
+      mac_address: 02:42:ac:11:65:43
+
+      ports:
+        - 3306:3306
+
+      restart: always
+
+      tty: true
+
+      user: usuario
+
+
+        
+
+        

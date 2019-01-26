@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+
+#Ambiente de produção>>>>
+
+
+  adminermanager:
+      ports:
+        - 8888:80
+      image: adminer
+      hostname: adminernode
+      deploy:
+        mode: replicated
+        replicas: 1
+        resources:
+          limits:
+            cpus: '0.50'
+            memory: 50M
+          reservations:
+            cpus: '0.25'
+            memory: 20M
+        update_config:
+          parallelism: 2
+          delay: 10s

@@ -1,0 +1,11 @@
+firewall docker configuração com UFW
+
+apt-get update -y
+
+apt-get install ufw -y
+
+ufw allow 2376/tcp && sudo ufw allow 7946/udp && sudo ufw allow 7946/tcp && sudo ufw allow 80/tcp && sudo ufw allow 2377/tcp && sudo ufw allow 4789/udp
+
+ufw reload && sudo ufw enable
+
+systemctl restart docker

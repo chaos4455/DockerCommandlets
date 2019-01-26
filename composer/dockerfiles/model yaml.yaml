@@ -1,0 +1,18 @@
+version: '3'
+services:
+  redis:
+  ports:
+    - "3306:3306"
+  image: mysql:latest
+  build:
+  volumes:
+    - ./var/mysql:/var/lib/mysql
+  environment:
+    - MYSQL_DATABASE=db
+    - MYSQL_USER=dbuser
+    - MYSQL_PASSWORD=mysql123
+    - MYSQL_ROOT_PASSWORD=mysql123
+deploy:
+      replicas: 1
+restart_policy:
+        condition: on-failure

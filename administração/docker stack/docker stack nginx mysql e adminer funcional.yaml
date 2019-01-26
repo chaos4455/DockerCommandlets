@@ -1,0 +1,74 @@
+version: '3'
+
+Serviços:
+  webserver:
+    image: nginx
+    networks:
+      - frontend
+      - backend
+    restart: always
+    ports:
+      - "8888:80"
+    deploy:
+        restart_policy:
+          condition: on-failure
+          delay: 5s
+          max_attempts: 3
+          window: 120s
+        resources:
+          limits:
+          cpus: '0.50'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M
+        labels:
+          com.example.description: "servidor nginx"
+      mode: replicated
+      replicas: 10
+        parallelism: 2
+        delay: 50s
+
+  bancodedados:
+    image: mysql
+    networks:
+      - backend
+      - frontend
+    deploy:
+        restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    labels:
+        com.example.description: "servdor mysql"
+        mode: replicated
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: kurdnir89
+    volumes:
+       - db-data:/var/lib/mysql/data
+    ports:
+      - "3306:3306"
+
+      mode: replicated
+      replicas: 5
+      update_config:
+        parallelism: 2
+        delay: 50s
+
+   adminer:
+     image: adminer
+     networks:
+      - backend
+      - frontend
+     deploy:
+        restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+      mode: replicated
+      replicas: 2
+     ports:
+        - 8080:8080

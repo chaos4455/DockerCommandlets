@@ -1,0 +1,11 @@
+Allow the ports 7946, 4789, 2376, 2376, 2377, and 80 using the UFW firewall with the following command:
+
+sudo ufw allow 2376/tcp && sudo ufw allow 7946/udp && sudo ufw allow 7946/tcp && sudo ufw allow 80/tcp && sudo ufw allow 2377/tcp && sudo ufw allow 4789/udp
+
+sudo ufw reload && sudo ufw enable
+
+systemctl restart docker
+
+ou
+
+service docker restart

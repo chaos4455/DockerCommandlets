@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+
+#Ambiente de produção debian
+
+  debianstack:
+        image: debian
+        hostname: debianstack
+        command: >
+         sh -c "apt-get update -y &&
+                apt-get install su -y &&
+                apt-get install ufw -y &&
+                apt-get install htop -y &&
+                apt-get install dropbear -y &&
+                dropbear start &&
+                dropbear &&
+                ufw allow 22 &&
+                ufw reload &&
+                service ufw restart"
+        ports:
+         - 2222:22
+        deploy:
+         mode: replicated
+         replicas: 1
+         resources:
+           limits:
+             cpus: '1.0'
+             memory: 200M
+           reservations:
+             cpus: '0.50'
+             memory: 100M
+         update_config:
+           parallelism: 1
+           delay: 20s
+         restart_policy:
+           condition: on-failure
+           max_attempts: 3
+           window: 120s

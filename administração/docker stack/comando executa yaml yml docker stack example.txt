@@ -1,0 +1,3 @@
+docker stack deploy -c mysql.yaml lampstack
+
+(se ja existe mesmo nome ela da update)

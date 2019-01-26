@@ -1,0 +1,1 @@
+docker service update dockerstack_redis --init

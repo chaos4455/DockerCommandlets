@@ -1,0 +1,14 @@
+docker run -t nginx /bin/bash
+
+
+docker exec-t nginx /bin/bash
+
+
+
+com container
+
+
+docker run -t 3ad2755ac3ef: /bin/bash
+
+
+docker exec-t 3ad2755ac3ef: /bin/bash

@@ -1,0 +1,5 @@
+https://github.com/aanand/compose-file/blob/master/loader/full-example.yml
+
+https://github.com/docker/cli/blob/master/cli/compose/loader/full-example.yml
+
+https://docs.docker.com/compose/compose-file/

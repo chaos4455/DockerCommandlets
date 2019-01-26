@@ -1,0 +1,1 @@
+docker service update nginxcluster --image nginxtop --init --update-delay 10s --rollback-parallelism 1 --rollback-monitor 30s --rollback-delay 1m --hostname nginxcluster --publish-add 9999:80
