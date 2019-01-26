@@ -1,0 +1,10 @@
+docker stack ps getstartedlab
+
+deploy 
+
+>> docker stack deploy -c docker-compose.yml getstartedlab
+
+docker stack ls
+
+docker stack rm
+
