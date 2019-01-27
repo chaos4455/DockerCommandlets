@@ -1,1 +1,12 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo mostra um exemplo funcional do comando docker servie create com o uso de replicas e exposição de portas  
+#>
+
 docker service create --name dockercluster --hostname dockerclusternode --replicas 2 --expose 00:60000 docker

@@ -1,1 +1,12 @@
+<#	
+	.NOTES
+	===========================================================================
+	 Created with: 	Virtual Studio Code
+	 Created on:   	26/01/2019 21:31
+	 Created by:   	Chaos4455 	
+	===========================================================================
+	.DESCRIÇÃO
+		Este arquivo  possui um exemplo de execução do comando docker service update para um cluster nginx com parametros de delay, monitoramento, rollback e paralelismo
+#>
+
 docker service update nginxcluster --image nginxtop --init --update-delay 10s --rollback-parallelism 5 --rollback-monitor 30s --rollback-delay 1m --hostname nginxcluster --publish-add 9999:80
