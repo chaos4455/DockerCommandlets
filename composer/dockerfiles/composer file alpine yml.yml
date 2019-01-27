@@ -6,19 +6,17 @@
 # Created by:   	Chaos4455 	
 #===========================================================================
 # DESCRIÇÃO
-#	Este arquivo executa o deploy de um stack mysql
+#	Este arquivo possui um template básico de deploy de um stack alpine
 #
 version: '3'
 services:
   redis:
-    image: mysql:latest
+    image: redis:alpine
     deploy:
-    ports:
-    - "3306:3306"
-  volumes:
-    - ./var/mysql:/var/lib/mysql
-  environment:
-    - MYSQL_DATABASE=db
-    - MYSQL_USER=dbuser
-    - MYSQL_PASSWORD=mysql123
-    - MYSQL_ROOT_PASSWORD=mysql123
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 50M
+        reservations:
+          cpus: '0.25'
+          memory: 20M

@@ -1,3 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	26/01/2019 21:31
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui informações e exemplo de um arquivo docker compose yml modelo v3
+#
 ##docker-compose.yml
 version: "3"
 services:

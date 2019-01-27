@@ -1,3 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	26/01/2019 21:31
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo arquivo possui um exemplo complexo de comandos e parametros para serem usados em um arquivo dockerfile v3
+#
 version: "3"
 
 services:

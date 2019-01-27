@@ -1,3 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	26/01/2019 21:31
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui um arquivo dockerfile .yml responsável pelo deploy de um stack com serviços em adminer, apache, nginx, mysql http e grafana em ambiente de teste e produção
+#
 version: '3'
 
 services:

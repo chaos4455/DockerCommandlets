@@ -1,3 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	26/01/2019 21:31
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÃ‡ÃƒO
+#	Este arquivo possui instruÃ§Ãµes de como executar a instalaÃ§Ã£o do docker machine no windows
+#
 base=https://github.com/docker/machine/releases/download/v0.14.0 &&
-  curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
-  sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&
+sudo install /tmp/docker-machine /usr/local/bin/docker-machine

@@ -1,3 +1,13 @@
+#	
+# Notas
+#===========================================================================
+# Created with: 	Virtual Studio Code
+# Created on:   	26/01/2019 21:31
+# Created by:   	Chaos4455 	
+#===========================================================================
+# DESCRIÇÃO
+#	Este arquivo possui um template funcional de um arquivo dockerfile avançado para deploy de um stack mysql na versão 3.7
+#
 version: "3.7"
 services:
   mysql:
@@ -32,20 +42,13 @@ services:
          delay: 25s
          max_attempts: 3
          window: 120s
-
       hostname: meumysql
-
       image: mysql
-
       mac_address: 02:42:ac:11:65:43
-
       ports:
         - 3306:3306
-
       restart: always
-
       tty: true
-
       user: usuario
 
 
