@@ -1,0 +1,1 @@
+docker inspect container_name | grep IPAddress

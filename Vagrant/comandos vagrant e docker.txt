@@ -1,0 +1,25 @@
+#teste eploy ubuntu 16 via vagrant  + docker
+
+>>>>
+
+vagrant init tknerr/baseimage-ubuntu-16.04 \
+  --box-version 1.0.0
+
+
+#depois chamei a criação com o comando : 
+
+
+vagrant up --provider=docker
+
+>>
+
+username : vagrant gerou user key
+
+
+ssh -i private_key vagrant@172.17.0.3
+
+foi usado para conectar de dentro da vm-- 
+
+descobrir como fazer o docker usar a rede local e compartilhar ip local..
+
+

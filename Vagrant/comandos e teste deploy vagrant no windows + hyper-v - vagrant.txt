@@ -1,0 +1,65 @@
+vagrant up
+vagrant init
+vagrant destroy
+
+
+--
+
+vagrant init hashicorp/precise32 cria um vagrant file
+
+comando init cria vagrantfile
+
+vagrant up inicia o arquivo vagrant file quando chamado dentro do diretório onde o mesmo se encontra..
+
+--
+
+comandos administração das boxex
+
+vagrant box -list
+
+--
+
+teste subir servidor debian..
+
+vagrant init debian/jessie64
+
+vagrant up
+
+
+***Não roda no hyper-v***
+
+
+>>
+
+
+****vagrant corre aplicações dentro do virtualbox, vmware, docker ??qemu ou hyper-v****
+
+
+
+>>>>TESTE DEPLOY hashicorp/precise64 ( É UM UBUNTU 64 PARA HYPER-V)
+
+***Deploy acontecendo com sucesso*** :-)
+
+(pergunta qual a rede do hyper-v vai usar.....)
+(espera pela máquina retornar o endereço ip)
+
+retornou ip 192.168.0.119:22
+abriu porta 22
+criou ssh username :vagrant
+criou método de login ssh por password
+
+login : vagrant - password
+
+(precisa abrir o putkeygen e abrir a chave .key no puttygen e depois criar uma senha única e exportar essa senha como senha senha privada e usar ela para fazer login no putty)
+
+ele loga auto através do putty login agent ( pageant)
+(loga normal ssh e também loga winscp)
+
+-- ficou 100 % funcional o deploy.. trabalhar agora na administração, aprender como administra 
+
+
+
+
+
+
+
