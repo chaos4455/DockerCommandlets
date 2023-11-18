@@ -1,5 +1,12 @@
 # DockerCommandlets 🐳
 
+
+
+![](https://cdn-images-1.medium.com/max/1200/1*6aiG8217Vy9kEpF5k9ag4Q.gif)
+
+
+
+
 Bem-vindo ao repositório DockerCommandlets! Aqui, você encontrará uma variedade de comandos e scripts relacionados ao Docker, abrangendo tutoriais, administração, Vagrant e estudos diversos. 🚀
 
 ## Estrutura de Pastas Principais
@@ -29,10 +36,3 @@ Documentos relacionados a estudos, experimentos e conceitos no uso do Docker.
 Sinta-se à vontade para contribuir! Adicione novos scripts, tutoriais ou melhore a documentação existente. Contribuições são sempre bem-vindas! 🎉
 
 
-![](https://cdn-images-1.medium.com/max/1200/1*6aiG8217Vy9kEpF5k9ag4Q.gif)
-
-
-![](https://wac-cdn.atlassian.com/dam/jcr:325fff80-6aa7-4d46-a3f9-4db402f17a8d/devops-loop-illustrations.png?cdnVersion=km)
-
-
-![](https://docker-unleashed.readthedocs.io/_images/microservices.png)
