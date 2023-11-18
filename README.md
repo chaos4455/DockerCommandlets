@@ -1,6 +1,5 @@
 # DockerCommandlets 🐳
 
-![](https://cdn-images-1.medium.com/max/1200/1*6aiG8217Vy9kEpF5k9ag4Q.gif)
 
 # Elias Andrade - Portfólio de Certificações e Conquistas
 
@@ -34,6 +33,7 @@ Para mais informações, propostas ou esclarecimentos, entre em contato pelo e-m
 ---
 
 
+![](https://cdn-images-1.medium.com/max/1200/1*6aiG8217Vy9kEpF5k9ag4Q.gif)
 
 
 📜 [Certificados e Competências](https://github.com/chaos4455/Certifica-es) - Explore meu repositório de certificações e realizações profissionais.
