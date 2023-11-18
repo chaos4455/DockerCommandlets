@@ -17,18 +17,19 @@ Para mais informações, propostas ou esclarecimentos, entre em contato pelo e-m
 ---
 ---
 ---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
+---
 📜 [Certificados e Competências](https://github.com/chaos4455/Certifica-es) - Explore meu repositório de certificações e realizações profissionais.
----
----
----
----
----
----
----
----
----
----
----
+
 
 # Aviso de Origem
 
