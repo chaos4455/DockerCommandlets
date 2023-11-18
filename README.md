@@ -30,6 +30,14 @@ Para mais informações, propostas ou esclarecimentos, entre em contato pelo e-m
 ---
 ---
 
+# Aviso de Origem
+
+Todos os scripts, comandos, conhecimentos e procedimentos contidos neste repositório são de autoria original ou foram adaptados pelo titular da conta. Qualquer documentação em formato PDF proveniente de terceiros, como desenvolvedores externos ou plataformas, é devidamente atribuída aos seus respectivos autores e fontes originais.
+
+O objetivo deste repositório é compartilhar experiências, conhecimentos e práticas relacionadas a tecnologias e ferramentas específicas. Se você encontrar qualquer conteúdo que não esteja devidamente atribuído ou que viole direitos autorais, entre em contato para que as devidas providências sejam tomadas.
+
+Agradecemos a compreensão e respeito à propriedade intelectual.
+
 
 ![](https://cdn-images-1.medium.com/max/1200/1*6aiG8217Vy9kEpF5k9ag4Q.gif)
 
