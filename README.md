@@ -32,7 +32,7 @@ Para mais informações, propostas ou esclarecimentos, entre em contato pelo e-m
 
 # Aviso de Origem
 
-Todos os scripts, comandos, conhecimentos e procedimentos contidos neste repositório são de autoria original ou foram adaptados pelo titular da conta. Qualquer documentação em formato PDF proveniente de terceiros, como desenvolvedores externos ou plataformas, é devidamente atribuída aos seus respectivos autores e fontes originais.
+Todos os scripts, comandos, conhecimentos e procedimentos contidos no formato .txt neste repositório são de autoria original e foram adaptados através do uso prático por mim. Demais documentações como de plataformas ou desenvolvedores e estão em formato pdf, devidamente atribuída aos seus respectivos autores e fontes originais.
 
 O objetivo deste repositório é compartilhar experiências, conhecimentos e práticas relacionadas a tecnologias e ferramentas específicas. Se você encontrar qualquer conteúdo que não esteja devidamente atribuído ou que viole direitos autorais, entre em contato para que as devidas providências sejam tomadas.
 
