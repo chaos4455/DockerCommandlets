@@ -36,9 +36,6 @@ Todos os scripts, comandos, conhecimentos e procedimentos contidos neste reposit
 
 O objetivo deste repositório é compartilhar experiências, conhecimentos e práticas relacionadas a tecnologias e ferramentas específicas. Se você encontrar qualquer conteúdo que não esteja devidamente atribuído ou que viole direitos autorais, entre em contato para que as devidas providências sejam tomadas.
 
-Agradecemos a compreensão e respeito à propriedade intelectual.
-
-
 ![](https://cdn-images-1.medium.com/max/1200/1*6aiG8217Vy9kEpF5k9ag4Q.gif)
 
 
