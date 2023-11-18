@@ -34,7 +34,9 @@ Para mais informações, propostas ou esclarecimentos, entre em contato pelo e-m
 
 Todos os scripts, comandos, conhecimentos e procedimentos contidos no formato .txt neste repositório são de autoria original e foram adaptados através do uso prático por mim. Demais documentações como de plataformas ou desenvolvedores e estão em formato pdf, devidamente atribuída aos seus respectivos autores e fontes originais.
 
-O objetivo deste repositório é compartilhar experiências, conhecimentos e práticas relacionadas a tecnologias e ferramentas específicas. Se você encontrar qualquer conteúdo que não esteja devidamente atribuído ou que viole direitos autorais, entre em contato para que as devidas providências sejam tomadas.
+O objetivo deste repositório é compartilhar experiências, conhecimentos e práticas relacionadas a tecnologias e ferramentas específicas. 
+
+You´re werlcome! :-)
 
 ![](https://cdn-images-1.medium.com/max/1200/1*6aiG8217Vy9kEpF5k9ag4Q.gif)
 
