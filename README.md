@@ -10,6 +10,8 @@
 
 Para mais informações, propostas ou esclarecimentos, entre em contato pelo e-mail: elias.andrade@evolucaoit.com.br
 
+📜 [Certificados e Competências](https://github.com/chaos4455/Certifica-es) - Explore meu repositório de certificações e realizações profissionais.
+
 ---
 ---
 ---
@@ -39,9 +41,6 @@ O objetivo deste repositório é compartilhar experiências, conhecimentos e pr�
 You´re werlcome! :-)
 
 ![](https://cdn-images-1.medium.com/max/1200/1*6aiG8217Vy9kEpF5k9ag4Q.gif)
-
-
-📜 [Certificados e Competências](https://github.com/chaos4455/Certifica-es) - Explore meu repositório de certificações e realizações profissionais.
 
 Bem-vindo ao repositório DockerCommandlets! Aqui, você encontrará uma variedade de comandos e scripts relacionados ao Docker, abrangendo tutoriais, administração, Vagrant e estudos diversos. 🚀
 
